@@ -1,2 +1,2 @@
 # AES_GUI
-This is a AES encryption/decryption tool on MacOs
+This is a AES encrypting/decrypting tool on MacOs
