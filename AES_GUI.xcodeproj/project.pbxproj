@@ -15,6 +15,7 @@
 		94DFF6051EE2E288007F9185 /* AES_GUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DFF6041EE2E288007F9185 /* AES_GUIUITests.swift */; };
 		94DFF6141EE2E2D4007F9185 /* aes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94DFF6121EE2E2D4007F9185 /* aes.cpp */; };
 		94DFF6171EE2E5EF007F9185 /* OCAesBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 94DFF6161EE2E5EF007F9185 /* OCAesBridge.mm */; };
+		94DFF62B1EE4CA3F007F9185 /* processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 94DFF6291EE4CA3F007F9185 /* processor.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		94DFF6161EE2E5EF007F9185 /* OCAesBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCAesBridge.mm; sourceTree = "<group>"; };
 		94DFF6181EE2E61E007F9185 /* OCAesBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCAesBridge.h; sourceTree = "<group>"; };
 		94DFF61E1EE2E887007F9185 /* AES_GUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AES_GUI-Bridging-Header.h"; sourceTree = "<group>"; };
+		94DFF6291EE4CA3F007F9185 /* processor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = processor.cpp; sourceTree = "<group>"; };
+		94DFF62A1EE4CA3F007F9185 /* processor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = processor.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,8 @@
 		94DFF5E61EE2E287007F9185 /* AES_GUI */ = {
 			isa = PBXGroup;
 			children = (
+				94DFF6291EE4CA3F007F9185 /* processor.cpp */,
+				94DFF62A1EE4CA3F007F9185 /* processor.hpp */,
 				94DFF6151EE2E352007F9185 /* aes_xTime.h */,
 				94DFF5E71EE2E288007F9185 /* AppDelegate.swift */,
 				94DFF5E91EE2E288007F9185 /* ViewController.swift */,
@@ -277,6 +282,7 @@
 				94DFF6141EE2E2D4007F9185 /* aes.cpp in Sources */,
 				94DFF5EA1EE2E288007F9185 /* ViewController.swift in Sources */,
 				94DFF5E81EE2E288007F9185 /* AppDelegate.swift in Sources */,
+				94DFF62B1EE4CA3F007F9185 /* processor.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +479,7 @@
 				DEVELOPMENT_TEAM = 5W7P6W5L2J;
 				INFOPLIST_FILE = AES_GUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "me.liwenkun.AES-GUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -529,6 +536,7 @@
 				94DFF60B1EE2E288007F9185 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94DFF60C1EE2E288007F9185 /* Build configuration list for PBXNativeTarget "AES_GUITests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +545,7 @@
 				94DFF60E1EE2E288007F9185 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		94DFF60F1EE2E288007F9185 /* Build configuration list for PBXNativeTarget "AES_GUIUITests" */ = {
 			isa = XCConfigurationList;
@@ -545,6 +554,7 @@
 				94DFF6111EE2E288007F9185 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
