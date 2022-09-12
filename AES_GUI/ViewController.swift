@@ -47,7 +47,7 @@ class ViewController: NSViewController {
         
         indicator.isHidden = true
         
-        alert.alertStyle = NSAlertStyle.warning;
+        alert.alertStyle = NSAlert.Style.warning;
         alert.messageText = "错误！"
         
     }
@@ -64,7 +64,7 @@ class ViewController: NSViewController {
         dialog.allowsMultipleSelection = false;
         dialog.allowedFileTypes        = nil;
         
-        if dialog.runModal() == NSModalResponseOK {
+        if dialog.runModal() == NSApplication.ModalResponse.OK {
             let result = dialog.url // Pathname of the file
             if result != nil {
                 let path = result!.path
@@ -81,7 +81,7 @@ class ViewController: NSViewController {
         
         dialog.allowedFileTypes = nil
         dialog.canCreateDirectories = true;
-        if dialog.runModal() == NSModalResponseOK {
+        if dialog.runModal() == NSApplication.ModalResponse.OK {
             let result = dialog.url;
             if result != nil {
                 let path = result!.path
@@ -109,8 +109,8 @@ class ViewController: NSViewController {
         
         if error != nil {
             alert.informativeText = error
-            alert.beginSheetModal(for: NSApplication.shared().mainWindow!, completionHandler: { (modalResponse) -> Void in
-                if modalResponse == NSAlertFirstButtonReturn {
+            alert.beginSheetModal(for: NSApplication.shared.mainWindow!, completionHandler: { (modalResponse) -> Void in
+                if modalResponse == NSApplication.ModalResponse.alertFirstButtonReturn {
                     print("Document deleted")
                 }
             })
